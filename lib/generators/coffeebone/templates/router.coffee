@@ -1,0 +1,5 @@
+define([], () ->
+  Backbone.Router.extend({
+
+  })
+)

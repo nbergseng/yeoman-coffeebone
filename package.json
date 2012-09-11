@@ -1,0 +1,31 @@
+{
+  "author": "Claus Witt",
+  "name": "yeoman-coffeebone",
+  "description": "Yeoman generator for creating backbone apps using coffeescript, handlesbars and requirejs",
+  "keywords": [
+    "front-end",
+    "development",
+    "scaffold", 
+    "coffeescript", 
+    "backbone", 
+    "generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clauswitt/yeoman-coffeebone.git"
+  },
+  "version": "0.0.1",
+  "dependencies": {"yeoman": "*"},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }, 
+  "homepage": "https://github.com/clauswitt/yeoman-coffeebone",
+  "bugs": {
+    "name": "https://github.com/clauswitt/yeoman-coffeebone/issues"
+  },
+  "author": {
+    "name": "Claus Witt"
+  }
+}
