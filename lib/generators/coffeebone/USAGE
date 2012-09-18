@@ -1,8 +1,48 @@
 Description:
-    Explain the generator
+    Generator for doing apps with a express/mongodb backend and a backbone/require.js/handlebars frontend.
 
 Example:
-    yeoman generate coffeebone Thing
+    yeoman generate coffeebone 
 
     This will create:
-        what/will/it/create
+        a complete application. 
+
+
+
+    yeoman generate coffeebone:view
+
+    This will create:
+      A Backbone view (in app/scripts/views) as an AMD module written in CoffeeScript. And a handlebars template (in app/scripts/templates)
+
+    yeoman generate coffeebone:model name:String:username username:String password:String
+
+    This will create:
+      A Backbone model (in app/scripts/models) as an AMD module written in CoffeeScript. The model will contain the three fields as default data. The first field will have the default string username, the others will be empty. 
+
+    yeoman generate coffeebone:collection User
+
+    This will create: 
+      A Backbone collection (ModelnameCollection in app/scripts/collections) as an AMD module written in CoffeeScript. Mapped to a model with a name User
+
+
+    yeoman generate coffeebone:router Name /some/route:get /another/route:get /third/route:post
+      
+    This will create: 
+      A node module automatically included by the app, ready for adding routes to the express app. The router will include the three routes already set up. 
+
+    yeoman generate coffeebone:schema Name name:String username:String password:String
+
+    This will create:
+      A node module automatically included by the app, with a Mongoose schema with the three fields mapped to their correct datatype.
+
+    yeoman generate coffeebone:rest User name:String username:String password:String
+      Will generate a rest endpoint: 
+        - it will generate a mongoose schema with the fields added. 
+        - it will generate a router with a GET, POST, PUT and DELETE route added. 
+        - the routes in the router will be implemented and be able to do CRUD in an attached MongoDb
+        - it will generate a model mapping the fields
+        - it will generate a collection mapped to the model, and with the correct url set
+
+      this means with one generator you can add all the code you need to interact with the backend object(s) from a backbone app. 
+
+
