@@ -15,17 +15,7 @@
     <body>
     <div class="container">
         <div class="hero-unit">
-            <h1>Cheerio!</h1>
-            <p>You now have</p>
-            <ul>
-                <li>HTML5 Boilerplate</li>
-                <li>jQuery</li>
-                <li>Backbone.js</li>
-                <li>Lodash</li>
-                <li>Mocha</li>
-            </ul>
-            <p>installed.</p>
-            <h3>Enjoy coding! - Yeoman</h3>
+            <h1>CoffeeBone!</h1>
         </div>
     </div>
         <!--[if lt IE 7]>
@@ -35,18 +25,11 @@
         <!-- Add your site or application content here -->
 
         <!-- build:js scripts/scripts.js -->
-        <script src="scripts/vendor/jquery.min.js"></script>
         <script src="scripts/vendor/lodash.min.js"></script>
+        <script src="scripts/vendor/jquery.min.js"></script>
         <script src="scripts/vendor/backbone-min.js"></script>
-        <script src="scripts/application.js"></script>
+        <script src="scripts/vendor/handlebars.js"></script>
+        <script src="scripts/vendor/require.js" data-main="application"></script>
         <!-- endbuild -->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>
