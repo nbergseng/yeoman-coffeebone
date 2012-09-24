@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git://github.com/clauswitt/yeoman-coffeebone.git"
   },
-  "version": "0.2.2",
+  "version": "0.2.3",
   "dependencies": {
     "yeoman": "*",
     "package-parser": "0.0.1"
