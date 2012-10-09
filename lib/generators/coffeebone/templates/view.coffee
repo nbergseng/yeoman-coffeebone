@@ -34,7 +34,7 @@ define(['text!templates/<%= name %>.handlebars'], (templateString) ->
       @onRender()
       template = Handlebars.compile templateString
       data = {}
-      data = @model.attributes if not typeof @model is 'undefined'
+      data = @model.attributes if typeof @model != 'undefined'
       $(@el).empty().append(template(data))
       @onRendered()
 

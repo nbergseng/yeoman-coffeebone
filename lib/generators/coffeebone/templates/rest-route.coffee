@@ -14,6 +14,7 @@ module.exports.initialize = (app) ->
   )
   app.put('<%= prefix %><%= _.slugify(name) %>/:id', (request, response) ->
     id = request.params.id;
+    delete request.body._id if request.body._id
     <%= name %>.update({_id: id}, {$set: request.body}, (error, result) ->
         response.send(JSON.stringify(result))
       )
